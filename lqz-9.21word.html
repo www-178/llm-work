@@ -2,18 +2,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+     if((a==123456789) && ( b==123456)){
+         alert('登录成功，卡内余额为'+d);
 </head>
 <body>
     <script>
      var  a=prompt('请输入账号');
      var  b=prompt('请输入密码');
      var  d=100000;
-     if((a==123) && ( b=='liu')){
-         alert('登录成功，卡内余额为'+d);
         var  c=prompt('请输如取款金额');
-         if("number"!==typeof(c)){
-             alert('请输入金额数');  
-         };
         alert ('卡内余额'+(100000-c));
      }else{
           alert('账号或密码不正确，请确认后再次输入');
