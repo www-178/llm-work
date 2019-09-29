@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style >
+      #in2{
+          margin-left:16px;
+      }
+    </style>
+</head>
+<body>
+    用户名：<input type="text" id="in1" >  
+    <span id="myspan"></span>
+    <br>
+    秘密：<input type="text" id="in2">
+    <span id="myspan2"></span>
+     <br>
+    <input type="button" name="" id="anniu" value="提交" />
+    <script>
+        var in1=document.getElementById('in1');
+        var in2=document.getElementById('in2');
+        var span=document.getElementById('myspan');
+        var span2=document.getElementById('myspan2');
+        var anniu=document.getElementById('anniu');
+        var a=['tom','jack','lili'];
+
+       anniu.onclick=function(){ 
+       	 if( a.indexOf(in1.value)!==-1){
+       	 	span.innerHTML="用户名已被注册"
+       	 }else if(in1.value==''){
+       	 	span.innerHTML="用户名不能为空"
+       	 }else{
+       	 span.innerHTML='√'
+       	    if(in1.value=='' ){
+       	 	  span.innerHTML="密码不能为空"
+       	 	
+            }else{
+       	     alert('注册成功') 
+       	    }
+       	 
+       	 
+       	 
+       	 }
+       	 
+//     	 if(in1.value=='' ){
+//     	 	span.innerHTML="密码不能为空"
+//     	 	
+//       }else{
+//     	 alert('注册成功') 
+//     	 }
+         
+       }
+     </script>
+</body>
+</html>
