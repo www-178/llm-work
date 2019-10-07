@@ -1,0 +1,221 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#head{
+	
+}
+/*第一行*/
+#head1{
+	width: 100%;
+	background-color:#3B4348 ;
+	border-bottom: 1px solid #525D64; 
+}
+#head1-1{
+	width: 1140px;
+	height: 56.4px;
+	/*padding: 15px 0px;*/
+	margin: 0 auto;
+	position: relative;
+}
+#head1-11{
+		position: absolute;
+		top:15px ;
+		left: 0px;
+}
+#head1-12{
+	position: absolute;
+	top:15px ;
+	right: 0px;
+}
+.head1-13{
+	margin-right:30px ;
+	text-decoration: none;
+}
+.head1-13:hover .head1-15{
+	color: #73B320;
+}
+.head1-13:hover .head1-16{
+	color: #ffffff;
+}
+.head1-14{
+	color: #bfbfbf;
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 13px;
+}
+.head1-14:hover{
+	color: #ffffff;
+}
+.head1-15{
+	color: #ffffff;
+	font-size:13px ;
+	font-weight: bold;
+}
+.head1-16{
+	color: #bfbfbf;
+	font-size:13px ;
+}
+/*#head1-17{
+}*/
+
+
+
+
+
+
+/*第二行*/
+#head2{
+	width: 100%;
+	background-color:#3B4348 ;
+	padding-top: 30px;
+	padding-bottom: 35px;
+}
+#head2-1{
+	width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+#head2-11{
+	margin-right: 100px;
+}
+#head2-12{
+	display: inline-block;
+	position: absolute;
+	
+}
+#head2-13{
+	width: 480px;
+	height: 60px;
+	border: 0;
+	padding-left: 20px;
+	color: #757575;
+	font-size: 17px;
+}
+#head2-14{
+	display: inline-block;
+	background: #39B0FF;
+	padding: 8.5px 10px;
+	float: right;
+}
+#head2-15{
+	width: 50px;
+	height: 42.76px;
+	float: right;
+}
+#head2-16{
+	padding: 18px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    color: #ffffff;
+    background-color: #73b320;
+    float: right;
+    margin-left: 100px;
+}
+
+
+
+
+
+/*第三行*/
+#head3{
+	width: 100%;
+	background-color:#333333 ;
+}
+#head3-1{
+	width: 1140px;
+	margin: 0 auto;
+}
+#head3-11{
+	padding: 22px 50px;
+	background-color: #73b320;
+	border: 0;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 50px;
+}
+.head3-12{
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 20px;
+}
+#head3-13{
+	margin-right: 10px;
+}
+
+
+
+
+
+/*第四行*/
+#head4{
+	width: 100%;
+	height: 629px;
+	background-image:url(img/lun1.jpg) ;
+}
+#head4-11{
+	padding-top: 180px;
+	padding-left: 380px;
+}
+#head4-1{
+	color: #ffffff;
+	font-size: 52px;
+	/*margin-bottom: 8px;*/
+}
+#head4-2{
+	color: #ffffff;
+	font-size: 30px;
+	margin-bottom: 19px;
+}
+#head4-3{
+	color: #ffffff;
+	font-size: 15px;
+}
+#head4-4{
+	color: #ffffff;
+	font-size:14px ;
+	margin-top: 37px;
+	padding: 15px 35px;
+	background-color:#73B320 ;
+	border: 0;
+}
+#head4-4:hover{
+	background-color: #39B0FF;
+}
+
+
+
+/*第五行*/
+#head5{
+	width: 100%;
+	background: #73B320;
+	padding: 32px 0;
+}
+#head5-11{
+	width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.head5-1{
+	display: inline-block;
+}
+.head5-11{
+	font-size: 15px;
+	color: #333333;
+	font-weight: bold;
+}
+.head5-12{
+	font-size: 13px;
+	color: #ffffff;
+}
+.head5-13{
+	display: inline-block;
+}
+.head5-14{
+	display: inline-block;
+}
