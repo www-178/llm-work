@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="h5"></div>
+		<input type="text" name="" id="ipt" value="" placeholder="验证码不区分大小写"/>
+		<button id="btn">验证</button>
+		<script type="text/javascript">
+			
+	     var btn=document.getElementById('btn')
+	     var ipt=document.getElementById('ipt')
+	     btn.onclick=function(){
+	       document.getElementById('h5').innerHTML='验证码为:'+ipt.value.toLowerCase()+'验证通过';
+	     }
+		</script>
+	</body>
+</html>
