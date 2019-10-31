@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="jquery.js"> 
+			
+		</script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div id=""style=" border: 1px solid black;">
+			<h1 style="text-align: center;">商品购物清单</h1>
+		
+		<table border="1px" cellspacing="" cellpadding=""style="width:100% ;height: 200px; text-align: center;">
+			<tr><td></td>
+				<td>商品名称</td>
+				<td>商品数量</td>
+				<td><span id="">商品单价</span></td>
+				<td><span id="">
+					合计(元)
+				</span></td>
+			</tr>
+			<tr><td><input type="checkbox" name="cbox" id=""class="cbox1" value="" /></td>
+				<td>华为mate20</td>
+				<td><input type="number" name="" id="num1" value="0"style=" width: 40px;height: 20px; "min="0" max="100" /></td>
+				<td><span id="yuan">
+					5999元
+				</span></td>
+				<td><span id="hj1" value=""></span></td>
+			</tr>
+			<tr><td><input type="checkbox" name="cbox" id=""class="cbox2" value="" /></td>
+				<td>小米9</td>
+				<td><input type="number" name="" id="num2" value="0"style="width: 40px;height: 20px; "min="0" max="100" /></td>
+				<td><span id="yuan">
+					4999元
+				</span></td>
+				<td><span id="hj2"></span></td>
+			</tr>
+		</table>
+		<p><span id="">共计:</span>
+		<span id="sl" ></span>
+		<span id="">商品</span></p>
+		<p><span id="">共计:</span>
+		<span id="gj">0</span>
+		<span id="">元</span></p>
+		
+		</div>
+		<script type="text/javascript">
+			$('#sl').html("0")
+			var s=0
+			var c=0
+			var d=0
+			var f=0
+			
+			$('#num1').change(function(){
+				 c=$("#num1").val()*5999
+				$('#hj1').html(c)
+				$("#gj").html(c+d)
+				
+			    
+			})
+				$('#num2').change(function(){
+			    d=$("#num2").val()*4999
+				$('#hj2').html(d)
+			   $("#gj").html(d+c) 
+			})
+            $('.cbox1').change(function(){
+				if($(".cbox1").prop("checked")){
+					$('#sl').html(s+=1)
+					
+				}else{
+					$('#sl').html(s-=1)
+					$('#num1').val("0")
+					c=$("#num1").val()*5999
+					$('#hj').html(c)
+					$('#gj').html(d+c)
+					console.log(c)
+					console.log(d)
+				}
+			})
+			$('.cbox2').change(function(){
+				if($(".cbox2").prop("checked")){
+					$('#sl').html(s+=1)
+					
+				}else{
+					$('#sl').html(s-=1)
+					$('#num2').val("0")
+					d=$("#num2").val()*4999
+					$('#hj').html(d)
+					$('#gj').html(d+c)
+					$('#hj2').html("0")
+					
+//					$('#sl').html(s-=1)
+//					$('#gj').html((d+c)-d)
+//					$('#num2').val("0")
+//					$('#hj2').html("0")
+//					console.log(c)
+//					console.log(d)
+		         
+					
+				}
+			})
+		</script>
+	</body>
+</html>
